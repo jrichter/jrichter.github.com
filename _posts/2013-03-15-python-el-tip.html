@@ -1,0 +1,6 @@
+---
+layout: post
+title: python.el tip
+published: true
+---
+<p>I downloaded emacs 24.3 the other day. &nbsp;One thing I ran into when loading python-mode was this, "&nbsp;Only symbols are supported in `compiler-macro' ". &nbsp;I googled it and was pointed to a github issue about using the proper python.el in the emacs-24 branch. &nbsp;Then I remembered that python.el is included with emacs 24.3. &nbsp;I ran emacs with --debug-init and found that I had a previous version from elpa. &nbsp;I removed that directory and all works again!</p>

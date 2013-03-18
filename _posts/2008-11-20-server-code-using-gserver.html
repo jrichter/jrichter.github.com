@@ -1,0 +1,9 @@
+---
+layout: post
+title: Server Code using GServer
+published: true
+---
+Well, through much googleing I have finally come up with a script that works well to receive messages from other hosts.  Yay!  I am using this to recieve HL7 messages from a computer that is blindly sending them.<p /><div class="CodeRay">
+  <div class="code"><pre>require 'gserver'class Connection &lt; GServer  def initialize(port=3003, *args)    super(port, *args)    Socket.do_not_reverse_lookup = true  #I set this true bc I have dns problems  end  def serve(io)    msg = io.recvfrom(10240)  #I only want to get upto 10mb of info    puts &quot;#{Time.now.strftime('%I:%M:%S%p on %a %b %d, %Y')}&quot;    puts &quot;#{msg}&quot;  endend</pre></div>
+</div>
+<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/7696555460565635585-8573734275595547029?l=www.jet5ive.com" height="1" alt="" width="1" /></div>

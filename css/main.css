@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Sintony);
+
+body {
+  font-family: Sans;
+  font-size: 14px;
+}
+a {
+  color: #077BBD;
+  text-decoration: none;
+  font-family:Tahoma,Verdana,Arial;
+}
+#wrapper {
+  width:970px;
+  padding:5px;
+  margin:auto;
+}
+#wrapper h1 {
+  font-family:'Poiret One', cursive;
+  font-size:68px;
+  font-weight:400;
+  padding-bottom:10px;
+}
+#wrapper p {
+  padding: 5px 2px 5px 2px;
+}
+#post h1 {
+  font-family:'Poiret One', cursive;
+  font-size:32px;
+  font-weight:400;
+  padding-bottom:10px;
+}
+.left {
+  float:left;
+  width:720px;
+}
+.right {
+  float:right;
+  width:220px;
+  background-color:#f9f9f9;
+}
+#about {
+  font-family:Tahoma,Verdana,Arial;
+  font-size:12px;
+  width:220px;
+}
+#about .name {
+  font-family:Sintony;
+  font-size:18px;
+  padding: 5px 0 2px 0;
+}
+#about .tag-line {
+  padding-bottom: 10px;
+  font-size:16px;
+}
+#archive {
+  text-align:left;
+  width:200px;
+  font-size:12px;
+  padding:15px 0 5px 2px;
+}
+#archive h2 {
+  padding:5px 0 5px 0;
+  font-family:Sintony;
+  border-bottom:1px solid #999c9f;
+}
+#archive h3 {
+  padding:15px 0 5px 0;
+  font-family:Sintony;
+}
+#archive .one {
+
+}
+#archive .two {
+
+}
+#archive .posts .date {
+  padding-top:2px;
+  padding-bottom:2px;
+}
+#archive .posts a {
+  font-size:13px;
+}
+#archive ul {
+  padding-bottom:5px;
+  border-bottom:1px solid #999c9f;
+}
+#recent-posts {
+  font-size:16px;
+}
+#recent-posts h2 {
+  font-family:Sintony;
+  font-size:22px;
+  border-bottom:1px solid #999c9f;
+}
+#recent-posts .posts {
+  padding-top:5px;
+  padding-bottom:15px;
+}
+#recent-posts .date {
+  color:#024e7b;
+}
+.post-footer {
+  line-height:16px;
+  margin-bottom:20px;
+}
+.twitter-follow-button {
+
+}

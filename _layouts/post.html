@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Justin Richter" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1><a href="/index.html">&laquo;</a></h1>
+      <div class="left">
+        <div id="recent-posts">
+          <div class="posts">
+            <h2>{{ page.title }}</h2>
+            <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
+            {{ page.content }}
+            <div class="post-footer">
+              <span class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://justin.jetfive.com{{page.url}}" data-text="{{ page.title }}" data-via="jrichter">Tweet</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div id="about">
+          <img src="/images/me.jpg" alt="Justin Richter" width="220px" />
+          <div class="name">
+            Justin Richter
+          </div>
+          <p class="tag-line">
+            Dad, husband, Christ follower
+          </p>
+        </div>
+        <div id="archive">
+          <h2>Recent Blog Posts</h2>
+          <ul class="posts">
+            {% for post in site.posts limit:15  %}
+            <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+            <li class="{% cycle 'one', 'two' %}">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <h3>&raquo; <a href="archive.html">All Blog Posts</a> &laquo;</h3>
+          <h3>
+            <a href="https://twitter.com/jrichter" class="twitter-follow-button" data-show-count="false">Follow @jrichter</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </body>
+</html>

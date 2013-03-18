@@ -1,0 +1,34 @@
+---
+layout: post
+title: rvm sinatra and passenger
+published: true
+---
+<p>My brother-in-law has been on me for a while now to convert to RVM. &nbsp;For those who don't know, <a href="http://rvm.beginrescueend.com/" title="RVM" target="_blank">RVM</a> is Ruby Version Manager. &nbsp;It makes switching back and forth between different versions of ruby and different gemsets a piece of cake. &nbsp;Here are a few tips I learned while setting up RVM on my linux box.</p>
+<p>These are in no particular order.</p>
+<p>1. &nbsp;If you don't use <a href="http://gembundler.com/" title="bundler" target="_blank">bundler</a> start.</p>
+<p>2. Install bundler and passenger to the global gemset. &nbsp;</p>
+<p>[code]
+
+
+rvm use 1.9.2@global
+
+
+gem install bundler passenger
+
+
+[/code]</p>
+<p>3. Add config/setup_load_paths.rb to your rails 3 app or to your sinatra app to make passenger see your gemsets. &nbsp;Then add the following to that file, courtesy of my brother-in-law. &nbsp;The key here is that it works for sinatra too. &nbsp;Took me all day to figure that out. :) &nbsp;(Rails is now Rack based.)</p>
+<p><a href="https://gist.github.com/661436"><script src="https://gist.github.com/661436.js"></script></a></p>
+<p>4. For Passenger, once it is installed in the global gemset, you can setup as normal.</p>
+<p>5. This is a good resource for item 3.&nbsp;<a href="http://rvm.beginrescueend.com/integration/passenger/">http://rvm.beginrescueend.com/integration/passenger/</a></p>
+<p>6. It is possible to have a default ruby version and gemset automatically load when you change into a directory.</p>
+<p>Add .rvmrc to the directory. &nbsp;</p>
+<p>[code] touch .rvmrc [/code]</p>
+<p>Create a gemset for the directory.</p>
+<p>[code] rvm gemset create &lt;name of gemset&gt; [/code]</p>
+<p>Then place the following code into the .rvmrc file.</p>
+<p>[code] rvm use &lt;ruby version&gt;@&lt;name of gemset&gt; [/code]</p>
+<p>7. Don't forget to switch back to the ruby version/gemset you really want to use if you don't have .rvmrc files.</p>
+<p>I will continue to add to this list if I think of more useful stuff.</p>
+<p>RVM is easy to install, and easy to use. &nbsp;Don't be afraid. &nbsp;Go, now, do it. &nbsp;See what its all about and save yourself some ruby headaches.</p>
+<p>&nbsp;</p>

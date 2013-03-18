@@ -1,0 +1,46 @@
+---
+layout: default
+title: Justin &raquo; Jetfive.com
+---
+<h1>Justin &raquo; <a href="http://www.jetfive.com">Jetfive.com</a></h1>
+<div class="left">
+  <div id="recent-posts">
+    {% for post in site.posts limit:3 %}
+    <div class="posts">
+      <h2>{{ post.title }}</h2>
+      <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+      {{ post.content }}
+      <div class="post-footer">
+        <span class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://justin.jetfive.com{{post.url}}" data-text="{{ post.title }}" data-via="jrichter">Tweet</a></span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="right">
+  <div id="about">
+    <img src="/images/me.jpg" alt="Justin Richter" width="220px" />
+    <div class="name">
+      Justin Richter
+    </div>
+    <p class="tag-line">
+      Dad, husband, Christ follower
+    </p>
+  </div>
+  <div id="archive">
+    <h2>Past Blog Posts</h2>
+    <ul class="posts">
+      {% for post in site.posts limit:15 offset:3 %}
+      <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+      <li class="{% cycle 'one', 'two' %}">
+
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <h3>&raquo; <a href="archive.html">All Blog Posts</a> &laquo;</h3>
+    <h3>
+      <a href="https://twitter.com/jrichter" class="twitter-follow-button" data-show-count="false">Follow @jrichter</a>
+    </h3>
+  </div>
+</div>

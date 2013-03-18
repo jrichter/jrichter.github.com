@@ -1,0 +1,10 @@
+---
+layout: post
+title: gnome 3.2 - arch linux login problem
+published: true
+---
+<p>I recently upgraded my gnome 3 install to gnome 3.2. &nbsp;Pacman threw an error so I forced the upgrade. &nbsp;I am never forcing an upgrade again. &nbsp;:) &nbsp;The upgrade completed and when I rebooted I was greeted with a sad face saying I should contact my system administrator. &nbsp;I hate it when software tells me to contact me. &nbsp;After a brief google search I was left with people complaining about 3.2 being unstable and what not. &nbsp;Thats what happens when you install something the day its released. &nbsp;I decided to go on to sleep, it was almost midnight and I had work the next day. &nbsp;When I got home I gave it another try, this time on the arch forums. &nbsp;Much better info. &nbsp;I issued these commands:</p>
+<p>pacman -Rdd python2-gobject pygobject-devel cogl</p>
+<p>Then:</p>
+<p>pacman -S pygobject-devel cogl</p>
+<p>Once I rebooted everything worked just fine. &nbsp;I probably could have just removed python2-gobject and had it work. &nbsp;Hope that helps someone else.</p>
