@@ -3,6 +3,9 @@
 body {
   font-family: Sans;
   font-size: 14px;
+  height: 100%
+  margin:0;
+  padding:0;
 }
 a {
   color: #077BBD;
@@ -37,6 +40,7 @@ a {
   float:right;
   width:220px;
   background-color:#f9f9f9;
+  padding-bottom:20px;
 }
 #about {
   font-family:Tahoma,Verdana,Arial;
@@ -91,6 +95,7 @@ a {
   font-family:Sintony;
   font-size:22px;
   border-bottom:1px solid #999c9f;
+  background-color:#eeeeee;
 }
 #recent-posts .posts {
   padding-top:5px;
@@ -99,10 +104,46 @@ a {
 #recent-posts .date {
   color:#024e7b;
 }
+.fixed-width {
+  float:left;
+  width:125px;
+}
+.post-url {
+  float:right;
+  width: 580px;
+}
+.clear {
+  border-top:1px dotted #eeeeee;
+  clear:both;
+}
 .post-footer {
   line-height:16px;
   margin-bottom:20px;
 }
 .twitter-follow-button {
 
+}
+
+#footer {
+  clear:both;
+  width: 100%;
+  height: 75px;   /* Height of the footer */
+  background:#024e7b;
+  color:#CCCfff;
+  font-size:14px;
+}
+#footer p {
+  padding:5px 2px 5px 2px;
+  text-align:center;
+  font-family:Sintony;
+}
+
+section.main {
+  position: relative;
+}
+
+section.coderwall {
+  position: absolute;
+  top: 0px;
+  left: 800px;
 }
