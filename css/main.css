@@ -100,6 +100,7 @@ a {
 #recent-posts .posts {
   padding-top:5px;
   padding-bottom:15px;
+  line-height:25px;
 }
 #recent-posts .date {
   color:#024e7b;
@@ -136,13 +137,35 @@ a {
   text-align:center;
   font-family:Sintony;
 }
-
-section.main {
-  position: relative;
+pre code {
+  font-family: monospace;
+  background-color:#f3f3f3;
+  border-left:2px solid #b4b4b4;
+  padding:4px;
+  line-height:20px;
 }
-
-section.coderwall {
-  position: absolute;
-  top: 0px;
-  left: 800px;
+.gist {
+  line-height:18px;
+}
+.gist-file{
+  border: none !important;
+}
+.gist-meta{
+  border: 1px solid #D2d2d2 !important;
+  padding: 12px !important;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+}
+.gist-data{
+  border: 1px solid #D2d2d2 !important;
+  border-bottom: none !important;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+div .file-data {
+  font-size:12px;
 }
