@@ -16,7 +16,9 @@ You may feel free to re-use any part of the structure, design, and layout of thi
 
 Copyright &copy; 2008-2013 Justin Richter. Rights reserved as indicated above.
 
-This readme _based off of [https://github.com/icco/pseudoweb/blob/master/README.md](https://github.com/icco/pseudoweb/blob/master/README.md)
+## This Readme
+
+_based off of [https://github.com/icco/pseudoweb/blob/master/README.md](https://github.com/icco/pseudoweb/blob/master/README.md)
 
 [j]: http://github.com/mojombo/jekyll
 [mojombo]: http://github.com/mojombo
