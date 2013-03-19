@@ -38,7 +38,11 @@
           <ul class="posts">
             {% for post in site.posts limit:15  %}
             <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+            {% if page.url == post.url %}
+            <li class="{% cycle 'one', 'two' %} active">
+            {% else %}
             <li class="{% cycle 'one', 'two' %}">
+            {% endif %}
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
             {% endfor %}
