@@ -16,7 +16,9 @@
           <div class="posts">
             <h2>{{ page.title }}</h2>
             <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
-            {{ content }}
+            <div class="post-content">
+              {{ content }}
+            </div>
             <div class="post-footer">
               <span class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://justin.jetfive.com{{page.url}}" data-text="{{ page.title }}" data-via="jrichter">Tweet</a></span>
             </div>
@@ -30,7 +32,7 @@
             Justin Richter
           </div>
           <p class="tag-line">
-            Dad, husband, Christ follower
+            Dad, husband, <a href="/2013/03/18/christ.html">Christ</a> follower
           </p>
         </div>
         <div id="archive">

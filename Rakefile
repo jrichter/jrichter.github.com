@@ -15,6 +15,7 @@ task :post do
     layout: post
     title: #{title}
     published: true
+    date: #{Time.now}
     ---
 
     EOS
