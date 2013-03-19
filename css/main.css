@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Poiret+One|Sintony);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Sintony|Fenix);
 
 body {
   font-family: Sans;
@@ -91,6 +91,11 @@ a {
 #recent-posts {
   font-size:16px;
 }
+#nav {
+  text-align:right;
+  font-size:22px;
+  line-height:14px;
+}
 #recent-posts h2 {
   font-family:Sintony;
   font-size:22px;
@@ -119,6 +124,7 @@ a {
 }
 .post-footer {
   line-height:16px;
+  margin-top:10px;
   margin-bottom:20px;
 }
 .twitter-follow-button {
@@ -143,6 +149,12 @@ pre code {
   border-left:2px solid #b4b4b4;
   padding:4px;
   line-height:20px;
+}
+blockquote p{
+  font-family:'Fenix',serif;
+  font-size:18px;
+  padding:5px 10px 5px 10px  !important;
+  background-color:#f9f9f9;
 }
 .gist {
   line-height:18px;

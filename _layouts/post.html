@@ -12,6 +12,7 @@
       <h1><a href="/index.html">&laquo;</a></h1>
       <div class="left">
         <div id="recent-posts">
+          <div id="nav"><a href="{{ page.next.url }}" title="Forward Sir">&laquo;</a> &ndash; <a href="{{ page.previous.url }}" title="Back in Time"> &raquo;</a></div>
           <div class="posts">
             <h2>{{ page.title }}</h2>
             <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
