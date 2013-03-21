@@ -19,46 +19,17 @@
             <div class="post-content">
               {{ content }}
             </div>
-            <div class="post-footer">
-              <span class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://justin.jetfive.com{{page.url}}" data-text="{{ page.title }}" data-via="jrichter">Tweet</a></span>
-            </div>
+            {% include post_footer.html %}
           </div>
         </div>
       </div>
       <div class="right">
-        <div id="about">
-          <img src="/images/me_small.jpg" alt="Justin Richter" width="220px" />
-          <div class="name">
-            Justin Richter
-          </div>
-          <p class="tag-line">
-            Dad, husband, <a href="/2013/03/18/christ.html">Christ</a> follower
-          </p>
-        </div>
-        <div id="archive">
-          <h2>Recent Blog Posts</h2>
-          <ul class="posts">
-            {% for post in site.posts limit:15  %}
-            <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
-            {% if page.url == post.url %}
-            <li class="{% cycle 'one', 'two' %} active">
-            {% else %}
-            <li class="{% cycle 'one', 'two' %}">
-            {% endif %}
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          <h3>&raquo; <a href="/archive.html">All Blog Posts</a> &laquo;</h3>
-          <h3>
-            <a href="https://twitter.com/jrichter" class="twitter-follow-button" data-show-count="false">Follow @jrichter</a>
-          </h3>
-        </div>
+        {% include about.html %}
+        {% include archive_recent.html %}
       </div>
     </div>
     <div class="clear"></div>
     {% include footer.html %}
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </body>

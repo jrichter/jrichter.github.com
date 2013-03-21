@@ -1,0 +1,16 @@
+<div id="archive">
+  <h2>Past Blog Posts</h2>
+  <ul class="posts">
+    {% for post in site.posts limit:15 offset:3 %}
+    <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+    <li class="{% cycle 'one', 'two' %}">
+
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <h3>&raquo; <a href="/archive.html">All Blog Posts</a> &laquo;</h3>
+  <h3>
+    <a href="https://twitter.com/jrichter" class="twitter-follow-button" data-show-count="false">Follow @jrichter</a>
+  </h3>
+</div>
