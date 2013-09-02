@@ -121,6 +121,10 @@ a {
   float:left;
   width:125px;
 }
+.post-content p {
+  color:#727272;
+  font-weight:600;
+}
 .post-content h1 {
   font-family:'Poiret One' !important;
   font-size:22px  !important;
@@ -136,6 +140,13 @@ a {
   font-family:'Poiret One' !important;
   font-size:18px !important;
   padding: 2px 0 2px 0 !important;
+}
+.post-content blockquote p {
+  font-weight: 400 !important;
+  color:#626262;
+}
+.post-content strong {
+  font-weight: bold;
 }
 .post-url {
   float:right;
