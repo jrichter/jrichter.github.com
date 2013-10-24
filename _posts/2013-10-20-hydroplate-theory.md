@@ -11,10 +11,13 @@ My aim here is to provide a place to chronicle some links to the hydroplate theo
 ###Book
 [creationscience.com/onlinebook](http://creationscience.com/onlinebook)
 
-###Youtube Links
-This is a two part sermon from [Calvary Church Port Orchard](http://www.youtube.com/user/CalvaryChurchPO?feature=watch) on the flood of Noah and how it is explained by the Hydroplate theory.
+##Youtube Links
+
 ####Dr Walt Brown 1993
 [1993 Excerpt - What Happened to Our Pre Flood Atmosphere](http://youtu.be/3jzijddw1qQ)
+
+This is a two part sermon from [Calvary Church Port Orchard](http://www.youtube.com/user/CalvaryChurchPO?feature=watch) on the flood of Noah and how it is explained by the Hydroplate theory.
+
 ####Part 1 - Flood of Noah
 * [Part 1, 1 of 6](http://youtu.be/XXQKSv5o_Po)
 * [Part 1, 2 of 6](http://youtu.be/YQeGHLgvUwo)
