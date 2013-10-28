@@ -46,3 +46,6 @@ This is a two part sermon from [Calvary Church Port Orchard](http://www.youtube.
 > **Assumption 2: A Global Continent.** The earth’s preflood crust encircled the globe. On the crust were deep and shallow seas, and mountains, generally smaller than those of today, but some perhaps 5,000 feet high. 
 
 > **Assumption 3: An Initial Crack.** A small initial crack occurred in the earth’s crust. (Later, several ways this crack could have started will be mentioned.) The basic forces that quickly propagated the crack around the earth will soon be explained.[qoute source](http://www.creationscience.com/onlinebook/HydroplateOverview6.html)
+
+###Other Links
+[Huge 'Ocean' Discovered Inside Earth](http://www.livescience.com/1312-huge-ocean-discovered-earth.html)
