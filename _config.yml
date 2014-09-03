@@ -1,5 +1,5 @@
 pygments:    false
-markdown:    maruku
+markdown:    kramdown
 
 name:        Justin >> Jetfive.com
 description: Blog by jrichter
