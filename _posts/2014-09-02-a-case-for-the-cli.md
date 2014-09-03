@@ -5,7 +5,6 @@ published: true
 date: 2014-09-02 21:42:44 -0500
 ---
 
-# A Case for the CLI
 Today I was reading [The Mythical Man Finger](http://stephenramsay.us/2011/07/25/the-mythical-man-finger/) and I just love this quote,
 
 > the idea that language is for power users and pictures and index fingers
