@@ -33,7 +33,7 @@ getmailrc
 
 I run nmh inc command with the -file switch.
 
-    inc -file /home/user/.mail
+    inc -file /home/user/.mail -truncate
 
 
 postfix is setup according to the above tutorial with the addition of
