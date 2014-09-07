@@ -10,37 +10,36 @@ I setup [getmail](https://www.linode.com/docs/email/clients/retrieving-email-usi
 and [postfix](http://souptonuts.sourceforge.net/postfix_tutorial.html).
 
 I tried fetchmail to pull all my mail from gmail, but it sends to postfix and I ended up
-with a "real" mailserver on my machine. That ended up with me sending lots of mailbox full
-messages to lots of people.
+with a "real" mailserver on my machine. That ended up with me sending lots of mail
+to lots of people.
 
 getmailrc
-~~~~~~
-[retriever]
-type = SimplePOP3SSLRetriever
-server = pop.gmail.com
-port = 995
-username = USERNAME
-password = PASSWORD
 
-[destination]
-type = Maildir
-path = ~/.mail/
+    [retriever]
+    type = SimplePOP3SSLRetriever
+    server = pop.gmail.com
+    port = 995
+    username = USERNAME
+    password = PASSWORD
 
-[options]
-delete = true
-message_log = ~/.getmail/log
+    [destination]
+    type = Maildir
+    path = ~/.mail/
 
-~~~~~~
+    [options]
+    delete = true
+    message_log = ~/.getmail/log
+
 
 I run nmh inc command with the -file switch.
-~~~~~~
-inc -file /home/user/.mail
-~~~~~~
+
+    inc -file /home/user/.mail
+
 
 postfix is setup according to the above tutorial with the addition of
-~~~~~~
-smtp_tls_CApath = /etc/ssl/certs
-~~~~~~
+
+    smtp_tls_CApath = /etc/ssl/certs
+
 
 I had to run c_rehash on that directory after trying to connect to gmail.
 
